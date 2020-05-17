@@ -26,6 +26,9 @@ body {
     margin: 0;
     background-color: #fffdf7;
     color: #453300;
+    background-image: url('images/bruno-aguirre-YRfaG3JVwkU-unsplash.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 input {
@@ -42,6 +45,7 @@ input {
 .container_top {
     background-color: #453300;
     margin-bottom: 40px;
+    opacity: 0.9;
 }
 
 .container_main {
@@ -50,6 +54,7 @@ input {
     margin: 40px auto;
     background-color:#fff5d9;
     padding: 10px 30px;
+    opacity: 0.85;
 }
 
 .one_field  {
