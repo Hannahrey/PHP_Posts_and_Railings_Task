@@ -1,7 +1,6 @@
 <?php
 require './get_railings_function.php';
 require './get_length_function.php';
-
  ?>
 
 <html lang="en-GB">
@@ -37,16 +36,16 @@ require './get_length_function.php';
             <?php
             // Calling the get length function, if the 'Calculate Length' button is pressed
             if (isset($_POST['calculate_length'])) {
-                $railings = htmlentities($_POST['railings']);
-                $result = $railings;
-                get_length((int)$result);
+                $result = htmlentities($_POST['railings']);
+                $railings = $result;
+                get_length((int)$railings);
             }
             ?>
         </div>
 
     <!-- container with posts/railings calculator in -->
         <div class="container_main">
-        <h2>Calculate number of railings and posts</h2>
+            <h2>Calculate number of railings and posts</h2>
             <!-- input form for calculating number of posts/railings -->
             <form action="" method="post">
                 <div class="one_field">
