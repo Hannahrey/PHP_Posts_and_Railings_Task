@@ -7,6 +7,7 @@
 */
 
 define("SECTION", 1.6);
+
 function get_railings(int $result_length) {
     if ((is_numeric($result_length)) && ($result_length >= 1.7)) {
         $num_railings = ceil($result_length / SECTION);

@@ -36,9 +36,12 @@ require './get_length_function.php';
             <?php
             // Calling the get length function, if the 'Calculate Length' button is pressed
             if (isset($_POST['calculate_length'])) {
-                $result = htmlentities($_POST['railings']);
-                $railings = $result;
+                if(!empty($_POST['railings'])) {
+                $railings = htmlentities($_POST['railings']);
                 get_length((int)$railings);
+                } else {
+                echo '<p>Enter the number of posts and railings</p>';
+                }
             }
             ?>
         </div>
@@ -60,15 +63,14 @@ require './get_length_function.php';
             <?php
             // Calling the get railings function, if the 'Calculate Fence' button is pressed
             if(isset($_POST['calculate_fence'])) {
-                $length = htmlentities($_POST['length']);
-                $result_length = $length;
-                get_railings($result_length);
+                if(!empty($_POST['length'])) {
+                $result_length = htmlentities($_POST['length']);
+                get_railings((int)$result_length);
+                } else {
+                echo '<p>Enter a length</p>';
+                }
             }
             ?>
         </div>
     </body>
 </html>
-
-
-
-
