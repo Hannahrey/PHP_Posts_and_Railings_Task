@@ -28,7 +28,7 @@ body {
     color: #453300;
     background-image: url('images/bruno-aguirre-YRfaG3JVwkU-unsplash.jpg');
     background-size: auto 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 input {
